@@ -2,7 +2,25 @@ sensors:
   break_beam_1:
     type: break_beam
     pose:
-      xyz: [1.6, 2.25, 0.91]
+      xyz: [1.6, 0, 0.91]
       rpy: [0, 0, 'pi']
-
-
+  camera1_conveyor:
+    type: logical_camera
+    pose:
+      xyz: [1.20, 0, 1.45]
+      rpy: [0, 1.57, 0]
+  camera2_bin3:
+    type: logical_camera
+    pose:
+      xyz: [-0.3, -0.383, 1.45 ]
+      rpy: [0, 1.57, 0]
+  camera3_bin4:
+    type: logical_camera
+    pose:
+      xyz: [-0.3, 0.383, 1.45]
+      rpy: [0, 1.57, 0]
+  camera4_bin5:
+    type: logical_camera
+    pose:
+      xyz: [-0.3, 1.15, 1.45]
+      rpy: [0, 1.57, 0]
