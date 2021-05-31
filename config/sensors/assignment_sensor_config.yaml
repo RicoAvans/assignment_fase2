@@ -4,23 +4,38 @@ sensors:
     pose:
       xyz: [1.6, 0, 0.91]
       rpy: [0, 0, 'pi']
-  camera1_conveyor:
+  camera1_bin1:
     type: logical_camera
     pose:
-      xyz: [1.20, 0, 1.45]
+      xyz: [-0.3, -1.916, 1.45 ]
       rpy: [0, 1.57, 0]
-  camera2_bin3:
+  camera2_bin2:
+    type: logical_camera
+    pose:
+      xyz: [-0.3, -1.15, 1.45 ]
+      rpy: [0, 1.57, 0]
+  camera3_bin3:
     type: logical_camera
     pose:
       xyz: [-0.3, -0.383, 1.45 ]
       rpy: [0, 1.57, 0]
-  camera3_bin4:
+  camera4_bin4:
     type: logical_camera
     pose:
       xyz: [-0.3, 0.383, 1.45]
       rpy: [0, 1.57, 0]
-  camera4_bin5:
+  camera5_bin5:
     type: logical_camera
     pose:
       xyz: [-0.3, 1.15, 1.45]
+      rpy: [0, 1.57, 0]
+  camera6_bin6:
+    type: logical_camera
+    pose:
+      xyz: [-0.3, 1.916, 1.45]
+      rpy: [0, 1.57, 0]
+  camera6_conveyor:
+    type: logical_camera
+    pose:
+      xyz: [1.20, 0, 1.45]
       rpy: [0, 1.57, 0]
