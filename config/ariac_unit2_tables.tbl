@@ -1,6 +1,23 @@
 <?xml version="1.0" ?>
 <tables>
-    <table name = "unit2_table">
+    <table name = "info_parts">
+		<part name="gasket_part">
+		    <robot_home1 value="home1" />
+		    <robot_home2 value="wait2" />
+		    <robot_pregrasp value="Robot1PreGraspConveyor" />
+		    <robot_action_topic_namespace value="/ariac/arm1" />
+		    <robot_frame value="arm1_base_link" />
+		    <camera_topic_conv value="/ariac/camera7_conveyor" />
+ 		    <camera_topic_bin1 value="yyyy" />
+ 		    <camera_topic_bin2 value="yyyy" />
+		    <camera_frame value="camera7_conveyor_frame" />
+ 		    <gripper_service value="/ariac/arm1/gripper/control" />
+	    	</part>
+	    	<part name="">
+		    <robot_config value="bin4PreGrasp" />
+		    <camera_topic value="/ariac/logical_camera_1" />
+		    <camera_frame value="logical_camera_1_frame" />
+	    	</part>
     </table>
     <table name = "andere_tabel_voor_unit2">
     </table>
