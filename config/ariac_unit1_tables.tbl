@@ -1,44 +1,123 @@
 <?xml version="1.0" ?>
 <tables>
-    <table name = "bin_config">
+    <table name = "bin_configR1">
 		    <bins name="bin1">
-			       <robot1_config value="Robot1PreGraspBin1" />
-			       <robot2_config value="Robot2PreGraspBin1" />
+			       <robot_pregrasp_pose value="Robot1PreGraspBin1" />
+             <robot_wait_pose value="wait1" />
+             <action_topic_namespace value="/ariac/arm1" />
+             <gripper_service value="/ariac/arm1/gripper/control" />
 		         <camera_topic value="/ariac/camera1_bin1" />
 		         <camera_frame value="camera1_bin1_frame" />
 		    </bins>
         <bins name="bin2">
-             <robot1_config value="Robot1PreGraspBin2" />
-             <robot2_config value="Robot2PreGraspBin2" />
+             <robot_pregrasp_pose value="Robot1PreGraspBin2" />
+             <robot_wait_pose value="wait1" />
+             <action_topic_namespace value="/ariac/arm1" />
+             <gripper_service value="/ariac/arm1/gripper/control" />
              <camera_topic value="/ariac/camera2_bin2" />
              <camera_frame value="camera2_bin2_frame" />
         </bins>
         <bins name="bin3">
-             <robot1_config value="Robot1PreGraspBin3" />
-             <robot2_config value="Robot2PreGraspBin3" />
+             <robot_pregrasp_pose value="Robot1PreGraspBin3" />
+             <robot_wait_pose value="wait1" />
+             <action_topic_namespace value="/ariac/arm1" />
+             <gripper_service value="/ariac/arm1/gripper/control" />
              <camera_topic value="/ariac/camera3_bin3" />
              <camera_frame value="camera3_bin3_frame" />
         </bins>
         <bins name="bin4">
-             <robot1_config value="Robot1PreGraspBin4" />
-             <robot2_config value="Robot2PreGraspBin4" />
+             <robot_pregrasp_pose value="Robot1PreGraspBin4" />
+             <robot_wait_pose value="wait1" />
+             <action_topic_namespace value="/ariac/arm1" />
+             <gripper_service value="/ariac/arm1/gripper/control" />
              <camera_topic value="/ariac/camera4_bin4" />
              <camera_frame value="camera4_bin4_frame" />
         </bins>
         <bins name="bin5">
-             <robot1_config value="Robot1PreGraspBin5" />
-             <robot2_config value="Robot2PreGraspBin5" />
+             <robot_pregrasp_pose value="Robot1PreGraspBin5" />
+             <robot_wait_pose value="wait1" />
+             <action_topic_namespace value="/ariac/arm1" />
+             <gripper_service value="/ariac/arm1/gripper/control" />
              <camera_topic value="/ariac/camera5_bin5" />
              <camera_frame value="camera5_bin5_frame" />
         </bins>
         <bins name="bin6">
-             <robot1_config value="Robot1PreGraspBin6" />
-             <robot2_config value="Robot2PreGraspBin6" />
+             <robot_pregrasp_pose value="Robot1PreGraspBin6" />
+             <robot_wait_pose value="wait1" />
+             <action_topic_namespace value="/ariac/arm1" />
+             <gripper_service value="/ariac/arm1/gripper/control" />
              <camera_topic value="/ariac/camera6_bin6" />
              <camera_frame value="camera6_bin6_frame" />
         </bins>
+    </table>
+
+    <table name = "bin_configR2">
+        <bins name="bin1">
+             <robot_pregrasp_pose value="Robot2PreGraspBin1" />
+             <robot_wait_pose value="wait2" />
+             <action_topic_namespace value="/ariac/arm2" />
+             <gripper_service value="/ariac/arm2/gripper/control" />
+        </bins>
+        <bins name="bin2">
+             <robot_pregrasp_pose value="Robot2PreGraspBin2" />
+             <robot_wait_pose value="wait2" />
+             <action_topic_namespace value="/ariac/arm2" />
+             <gripper_service value="/ariac/arm2/gripper/control" />
+        </bins>
+        <bins name="bin3">
+             <robot_pregrasp_pose value="Robot2PreGraspBin3" />
+             <robot_wait_pose value="wait2" />
+             <action_topic_namespace value="/ariac/arm2" />
+             <gripper_service value="/ariac/arm2/gripper/control" />
+        </bins>
+        <bins name="bin4">
+             <robot_pregrasp_pose value="Robot2PreGraspBin4" />
+             <robot_wait_pose value="wait2" />
+             <action_topic_namespace value="/ariac/arm2" />
+             <gripper_service value="/ariac/arm2/gripper/control" />
+        </bins>
+        <bins name="bin5">
+             <robot_pregrasp_pose value="Robot2PreGraspBin5" />
+             <robot_wait_pose value="wait2" />
+             <action_topic_namespace value="/ariac/arm2" />
+             <gripper_service value="/ariac/arm2/gripper/control" />
+        </bins>
+        <bins name="bin6">
+             <robot_pregrasp_pose value="Robot2PreGraspBin6" />
+             <robot_wait_pose value="wait2" />
+             <action_topic_namespace value="/ariac/arm2" />
+             <gripper_service value="/ariac/arm2/gripper/control" />
+        </bins>
+    </table>
+
+
+    <table name = "part_heights">
+        <parts name="gasket_part">
+              <part_height value="0.038" />
+              <pose_test value="0.2, 0.15, 0.6" />
+        </parts>
+        <parts name="gear_part">
+              <part_height value="0.028" />
+        </parts>
+        <parts name="piston_rod_part">
+              <part_height value="0.018" />
+        </parts>
 
     </table>
-    <table name = "andere_tabel_voor_unit1">
+    <table name = "pose_config">
+        <robot name="agv1">
+              <action_topic_namespace value="/ariac/arm1" />
+              <agv_pose_config value="Robot1PreGraspAGV1" />
+              <which_robot value="robot1" />
+              <ref_frame_get_agv_pose value="arm1_linear_arm_actuator" />
+              <frame_get_agv_pose value="kit_tray_1" />
+        </robot>
+        <robot name="agv2">
+              <action_topic_namespace value="/ariac/arm2" />
+              <agv_pose_config value="Robot2PreGraspAGV2" />
+              <which_robot value="robot2" />
+              <ref_frame_get_agv_pose value="arm2_linear_arm_actuator" />
+              <frame_get_agv_pose value="kit_tray_2" />
+        </robot>
     </table>
 </tables>
