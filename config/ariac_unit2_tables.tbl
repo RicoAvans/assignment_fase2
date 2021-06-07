@@ -7,18 +7,40 @@
 		    <robot_pregrasp value="Robot1PreGraspConveyor" />
 		    <robot_action_topic_namespace value="/ariac/arm1" />
 		    <robot_frame value="arm1_base_link" />
-		    <camera_topic_conv value="/ariac/camera7_conveyor" />
- 		    <camera_topic_bin1 value="yyyy" />
- 		    <camera_topic_bin2 value="yyyy" />
-		    <camera_frame value="camera7_conveyor_frame" />
+		    <end_pose value="home1" />
  		    <gripper_service value="/ariac/arm1/gripper/control" />
+		    <offset_part value= "0.037" />
 	    	</part>
-	    	<part name="">
-		    <robot_config value="bin4PreGrasp" />
-		    <camera_topic value="/ariac/logical_camera_1" />
-		    <camera_frame value="logical_camera_1_frame" />
+	    	<part name="gear_part">
+		    <robot_home1 value="home1" />
+		    <robot_home2 value="wait2" />
+		    <robot_pregrasp value="Robot1PreGraspConveyor" />
+		    <robot_action_topic_namespace value="/ariac/arm1" />
+		    <robot_frame value="arm1_base_link" />
+		    <end_pose value="home1" />
+ 		    <gripper_service value="/ariac/arm1/gripper/control" />
+		    <offset_part value= "0.028" />
+	    	</part>
+	    	<part name="piston_rod_part">
+		    <robot_home1 value="wait1" />
+		    <robot_home2 value="home2" />
+		    <robot_pregrasp value="Robot2PreGraspConveyor" />
+		    <robot_action_topic_namespace value="/ariac/arm2" />
+		    <robot_frame value="arm2_base_link" />
+		    <end_pose value="home2" />
+ 		    <gripper_service value="/ariac/arm2/gripper/control" />
+		    <offset_part value= "0.018" />
 	    	</part>
     </table>
-    <table name = "andere_tabel_voor_unit2">
+    <table name = "bin_choice">
+		<bin name="gasket_part">
+		    <robot_pregrasp value="Robot1PreGraspBin2" />
+	    	</bin>
+		<bin name="gear_part">
+		    <robot_pregrasp value="Robot1PreGraspBin6" />
+	    	</bin>
+		<bin name="piston_rod_part">
+		    <robot_pregrasp value="Robot2PreGraspBin1" />
+	    	</bin>
     </table>
 </tables>
