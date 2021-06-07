@@ -28,7 +28,7 @@ orders:
           rpy: [0, 0, 'pi/4']
   order_1:
     announcement_condition: time
-    announcement_condition_value: 10.0
+    announcement_condition_value: 90.0
     shipment_count: 1
     destinations: [agv1]
     products:
